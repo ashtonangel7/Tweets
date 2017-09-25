@@ -13,7 +13,7 @@
 
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ArgumentNullException("Name passed into User may not be null.");
+                throw new ArgumentNullException("Name passed into User may not be null or empty.");
             }
 
             _name = name;
