@@ -1,5 +1,4 @@
 # Tweets
-----
 
 Tweets is a demo application to show 3 users tweeting.
 
@@ -21,4 +20,5 @@ If loading of these files fails for whichever reason the load is
 
  #### How To Run
 
- Open the project in VS and hit run.
+ Open the solution in VS and hit run.  
+ There are some basic test which can also be executed in the TestTweets Project.
