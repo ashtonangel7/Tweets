@@ -22,3 +22,26 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.glyphicon.glyphicon-user {
+    font-size:50px !important;
+    margin:5px;
+    color:dimgray;
+}
+
+.media {
+    background-color:lavender;
+    padding:2px;
+}
+
+.media-left {
+    background-color:white;
+}
+
+.media-body{ 
+    padding:5px !important;
+}
+
+.media-heading {
+    font-weight:bolder;
+}

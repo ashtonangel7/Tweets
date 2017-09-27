@@ -10,6 +10,8 @@
         private static readonly List<User> users = new List<User>();
         private static readonly List<Tweet> tweets = new List<Tweet>();
 
+        private static bool isInitialized =  false;
+
         public static List<User> Users
         {
             get
@@ -26,6 +28,14 @@
             }
         }
 
+        public static bool IsInitialized
+        {
+            get
+            {
+                return isInitialized;
+            }
+        }
+
         public static void RegisterStaticResources(string usersFilePath,
             string tweetsFilePath)
         {
@@ -35,6 +45,8 @@
 
             ReadUsersAndFollowersFromFile(usersFile);
             ReadTweetsFromFile(tweetsFile);
+
+            isInitialized = true;
         }
 
         private static void ReadUsersAndFollowersFromFile(string usersFilePath)
